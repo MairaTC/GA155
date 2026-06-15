@@ -41,7 +41,7 @@ def main():
         col1, col2, col3 = st.columns(3)
         col1.metric("Total de homicídios", f"{df_filtrado['Total de Homicídios'].sum():,}".replace(",", "."))
         col2.metric("Vítimas mulheres", f"{df_filtrado['Mulheres — Total'].sum():,}".replace(",", "."))
-        col3.metric("Taxa média (por 100 mil)", f"{df_filtrado['Mulheres — Taxa'].mean():.1f}")
+        col3.metric("Taxa média (por 100 mil hab.)", f"{df_filtrado['Mulheres — Taxa'].mean():.1f}")
         
         st.divider()
         
